@@ -50,3 +50,63 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Ignore sensitive or temporary files and directories
+/.env
+/.env.local
+/.env.*.local
+/.env.test.local
+/.env.test
+
+# Symfony-related directories
+/var/
+/public/bundles/
+/translations/*.yaml
+/.phpunit.result.cache
+/node_modules/
+/composer.lock
+
+# Docker-specific ignores
+/docker-compose.override.yml
+/.dockerignore
+/vendor
+/var
+/public
+/node_modules
+
+# Ignore IDE-specific files and directories
+/.idea/
+/.vscode/
+
+# Ignore MacOS-specific files
+.DS_Store
+
+# Ignore other OS generated files
+Thumbs.db
+Desktop.ini
+
+# Ignore PHPStorm-specific files
+/.phpstorm.meta.php
+
+# Ignore files related to the Symfony Encore build (webpack)
+/public/build/
+/public/assets/
+
+# Ignore local configuration files
+/.env.local.php
+
+# Ignore Docker container and data directories
+/docker/
+
+# Ignore composer and npm logs
+/npm-debug.log
+/yarn-error.log
+
+# Ignore miscellaneous binaries
+/bin/
+/sbin/
+
+# Ignore miscellaneous user-specific files
+*.swp
+*.swo
+
